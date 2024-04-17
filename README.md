@@ -68,16 +68,16 @@ You can install Postman via this website: https://www.postman.com/downloads/
     -   [x] Commit: `Implement list_all_as_string function in Notification repository.`
     -   [x] Write answers of your learning module's "Reflection Subscriber-1" questions in this README.
 -   **STAGE 3: Implement services and controllers**
-    -   [ ] Commit: `Create Notification service struct skeleton.`
-    -   [ ] Commit: `Implement subscribe function in Notification service.`
-    -   [ ] Commit: `Implement subscribe function in Notification controller.`
-    -   [ ] Commit: `Implement unsubscribe function in Notification service.`
-    -   [ ] Commit: `Implement unsubscribe function in Notification controller.`
-    -   [ ] Commit: `Implement receive_notification function in Notification service.`
-    -   [ ] Commit: `Implement receive function in Notification controller.`
-    -   [ ] Commit: `Implement list_messages function in Notification service.`
-    -   [ ] Commit: `Implement list function in Notification controller.`
-    -   [ ] Write answers of your learning module's "Reflection Subscriber-2" questions in this README.
+    -   [x] Commit: `Create Notification service struct skeleton.`
+    -   [x] Commit: `Implement subscribe function in Notification service.`
+    -   [x] Commit: `Implement subscribe function in Notification controller.`
+    -   [x] Commit: `Implement unsubscribe function in Notification service.`
+    -   [x] Commit: `Implement unsubscribe function in Notification controller.`
+    -   [x] Commit: `Implement receive_notification function in Notification service.`
+    -   [x] Commit: `Implement receive function in Notification controller.`
+    -   [x] Commit: `Implement list_messages function in Notification service.`
+    -   [x] Commit: `Implement list function in Notification controller.`
+    -   [x] Write answers of your learning module's "Reflection Subscriber-2" questions in this README.
 
 ## Your Reflections
 This is the place for you to write reflections:
@@ -94,3 +94,11 @@ Kita menggunakan RwLock<> karena kita memerlukan sifat RwLock<> yang hanya bisa 
 Secara desain bahasa awal, Rust memang dirancang lebih ketat dibandingkan dengan Java. Penggunaan lazy_static di Rust juga lebih ketat dibandingkan static di Java. Hal tersebut bertujuan agar keamanan multithreading dan mencegah race condition.  Sehingga, secara umum lazy_static di Rust bersifat immutable. Hal tersebut dilakukan juga untuk mempertahankan konsep borrowing dan owbnership pada Rust.
 
 #### Reflection Subscriber-2
+1. Have you explored things outside of the steps in the tutorial, for example: src/lib.rs? If not, explain why you did not do so. If yes, explain things that you have learned from those other parts of code.
+Saya belum melakukan eksplorasi lainnya. Karena, saya harus mengerjakan tugas-tugas lainnya. Akan tetapi, saya juga akan mempelajari dan eksplor hal lainnya kedepannya.
+
+2. Since you have completed the tutorial by now and have tried to test your notification system by spawning multiple instances of Receiver, explain how Observer pattern eases you to plug in more subscribers. How about spawning more than one instance of Main app, will it still be easy enough to add to the system?
+Dengan menggunakan Observer pattern, saya dapat dengan mudah menambahkan Subscriber baru. Hal tersebut dapat dilakukan hanya dengan menambahkan mereka ke daftar Subscriber. Apabila saya melakukan spawning lebih dari satu instance main app, penambahan Subscriber baru juga akan tetap mudah. Namun, mungkin sinkronisasi antar app nya yang akan menjadi sedikit lebih susah.
+
+3. Have you tried to make your own Tests, or enhance documentation on your Postman collection? If you have tried those features, tell us whether it is useful for your work (it can be your tutorial work or your Group Project).
+Saya belum mencoba hal tersebut. Tetapi saya akan mencoba hal tersebut kedepannya.
